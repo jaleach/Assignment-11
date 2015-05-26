@@ -4,37 +4,11 @@
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
 
-
-var people = [
-  {name: 'Tim', location:'atl'},
-  {name: 'Doug', location:'Topeka'},
-  {name: 'Jeff', location: 'nowhere'},
-  {name: 'John', location: 'unknown'}
-]
-
 // 1. Write your own forEach function. It takes the array and the function (referred to as a callback) as arguments:
 
-function forEach(list, callback) {
-  for (var i = 0; i < list.length; i++) {
-    callback(list[i]);
-  }
-};
-
-function log(person) {
-  console.log('hello ' + person.name);
-};
 
 // 2. Write your own map, reduce, and filter functions that use your custom forEach to do their work.
 
-function map(arr, mapper) {
-  var results = [];
-
-  forEach(arr, function(param) {
-    results.push(mapper(param));
-  });
-
-  return results;
-};
 
 
 //////////////////////////////////////////////////
